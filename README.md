@@ -2,7 +2,8 @@
 
 ### Парсер, ***реализованный в прошлой лабораторной работе***, проходится по статьям тематики ***"блокчейн"*** и скачивает их при помощи библиотек Selenium и Webdriver (функция parser())
 ![parser_1](https://i.ibb.co/LPC88VH/image.png)
-***...***
+###
+### ***...***
 ![parser_2](https://i.ibb.co/frjtzP7/image.png)
 ### Затем функция pdf_reader() считывает весь текст из скаченных статей при помощи библиотеки tika и формирует их в файл AllText.txt
 ![pdf_reader](https://i.ibb.co/PMq5gWp/image.png)
