@@ -69,6 +69,7 @@ def parse(path, driver, page, articles, pagination, pages):
             print('Введите число')
 
     for j in range(pages_needed):
+	
         WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'paginator')))
         ul = driver.find_element_by_id('search-results')
         li = ul.find_elements_by_tag_name('li')
@@ -83,6 +84,7 @@ def parse(path, driver, page, articles, pagination, pages):
              +'+++++++++++++++\n\n\n')
 
         for i in range(len(li)):
+		
             WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'paginator')))
             ul = driver.find_element_by_id('search-results')
             li = ul.find_elements_by_tag_name('li')
